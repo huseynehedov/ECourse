@@ -1,10 +1,10 @@
-package dao;
+package service;
 
 import model.Teacher;
 
 import java.util.List;
 
-public interface TeacherDao {
+public interface TeacherService {
 
     List<Teacher> getTeacherList() throws Exception;
 

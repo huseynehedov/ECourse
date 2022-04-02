@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 import java.util.Properties;
 
 /*
-    Baza ile Connection hissesini ozunde saxlayan bir classdir.
+    Baza ile Connection hissesini ozunde saxlayan bir class-dir.
  */
 public class DbHelper {
     public static Connection getConnection() throws Exception{

@@ -1,10 +1,10 @@
-package dao;
+package service;
 
 import model.Lesson;
 
 import java.util.List;
 
-public interface LessonDao {
+public interface LessonService {
 
     List<Lesson> getLessonList() throws Exception;
 
