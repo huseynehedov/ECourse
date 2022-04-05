@@ -22,4 +22,24 @@ public class LessonServiceImpl implements LessonService {
     public void addLesson(Lesson lesson) throws Exception {
         lessonDao.addLesson(lesson);
     }
+
+    @Override
+    public Lesson getLessonById(Long lessonId) throws Exception {
+        return lessonDao.getLessonById(lessonId);
+    }
+
+    @Override
+    public void updateLesson(Lesson lesson) throws Exception {
+        lessonDao.updateLesson(lesson);
+    }
+
+    @Override
+    public void deleteLesson(Long lessonId) throws Exception {
+        lessonDao.deleteLesson(lessonId);
+    }
+
+    @Override
+    public List<Lesson> searchLessonData(String key) throws Exception {
+        return lessonDao.searchLessonData(key);
+    }
 }

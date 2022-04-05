@@ -61,7 +61,8 @@ public class Teacher extends CourseModel {
     @Override
     public String toString() {
         return "Teacher{" +
-                "name='" + name + '\'' +
+                "id='" + super.getId() + '\'' +
+                ", name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", address='" + address + '\'' +
                 ", phone='" + phone + '\'' +

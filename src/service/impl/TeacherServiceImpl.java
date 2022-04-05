@@ -22,4 +22,24 @@ public class TeacherServiceImpl implements TeacherService {
     public void addTeacher(Teacher teacher) throws Exception {
         teacherDao.addTeacher(teacher);
     }
+
+    @Override
+    public Teacher getTeacherById(Long teacherId) throws Exception {
+        return teacherDao.getTeacherById(teacherId);
+    }
+
+    @Override
+    public void updateTeacher(Teacher teacher) throws Exception {
+        teacherDao.updateTeacher(teacher);
+    }
+
+    @Override
+    public void deleteTeacher(Long teacherId) throws Exception {
+        teacherDao.deleteTeacher(teacherId);
+    }
+
+    @Override
+    public List<Teacher> searchTeacherData(String key) throws Exception {
+        return teacherDao.searchTeacherData(key);
+    }
 }

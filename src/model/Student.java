@@ -49,7 +49,8 @@ public class Student extends CourseModel {
     @Override
     public String toString() {
         return "Student{" +
-                "name='" + name + '\'' +
+                "id='" + super.getId() + '\'' +
+                ", name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", address='" + address + '\'' +
                 ", phone='" + phone + '\'' +

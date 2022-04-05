@@ -32,7 +32,8 @@ public class Lesson extends CourseModel{
     @Override
     public String toString() {
         return "Lesson{" +
-                "name='" + name + '\'' +
+                "id='" + super.getId() + '\'' +
+                ", name='" + name + '\'' +
                 ", time=" + time +
                 ", price=" + price +
                 '}';

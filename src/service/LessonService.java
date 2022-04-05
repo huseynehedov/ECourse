@@ -10,4 +10,11 @@ public interface LessonService {
 
     void addLesson(Lesson lesson) throws Exception;
 
+    Lesson getLessonById(Long lessonId) throws Exception;
+
+    void updateLesson(Lesson lesson) throws Exception;
+
+    void deleteLesson(Long lessonId) throws Exception;
+
+    List<Lesson> searchLessonData(String key) throws Exception;
 }
